@@ -1,0 +1,18 @@
+trigger:
+  - master
+pr:
+  - master
+
+pool:
+  name: IT-Java
+
+steps:
+  - task: TerraformInstaller@0
+    inputs:
+      terraformVersion: '1.1.9'
+
+  - script: terraform version
+    displayName: Terraform Version
+
+  - script: terraform fmt -recursive
+    displayName: Terraform fmt
