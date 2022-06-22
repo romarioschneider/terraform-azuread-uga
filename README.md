@@ -23,14 +23,14 @@ If you want to learn more about creating good readme files then refer the follow
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 2.22.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1.7 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | = 2.22.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuread"></a> [azuread](#provider\_azuread) | >= 2.22.0 |
+| <a name="provider_azuread"></a> [azuread](#provider\_azuread) | = 2.22.0 |
 
 ## Modules
 
@@ -40,10 +40,10 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azuread_group.group](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/group) | resource |
-| [azuread_group.group_check](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/group) | data source |
-| [azuread_groups.existing_groups](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/groups) | data source |
-| [azuread_users.users](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/users) | data source |
+| [azuread_group.group](https://registry.terraform.io/providers/hashicorp/azuread/2.22.0/docs/resources/group) | resource |
+| [azuread_group.group_check](https://registry.terraform.io/providers/hashicorp/azuread/2.22.0/docs/data-sources/group) | data source |
+| [azuread_groups.existing_groups](https://registry.terraform.io/providers/hashicorp/azuread/2.22.0/docs/data-sources/groups) | data source |
+| [azuread_users.users](https://registry.terraform.io/providers/hashicorp/azuread/2.22.0/docs/data-sources/users) | data source |
 
 ## Inputs
 
@@ -55,6 +55,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_group_ids"></a> [group\_ids](#output\_group\_ids) | Managed Active Directory groups object ids |
-
+| <a name="output_managed_groups"></a> [managed\_groups](#output\_managed\_groups) | Managed Active Directory groups and members ids |
 <!-- END_TF_DOCS -->

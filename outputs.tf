@@ -1,6 +1,9 @@
-output "group_ids" {
+output "managed_groups" {
   value = [
-    for group in azuread_group.group : group.object_id
+    for group in azuread_group.group : {
+      group_id      = group.object_id
+      group_members = group.members
+    }
   ]
-  description = "Managed Active Directory groups object ids"
+  description = "Managed Active Directory groups and members ids"
 }

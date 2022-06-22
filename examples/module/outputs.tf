@@ -1,3 +1,3 @@
-output "groups" {
-  value = module.managed_groups_users_assignment.group_ids
+output "managed_groups" {
+  value = module.managed_groups_users_assignment.managed_groups
 }
